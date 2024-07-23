@@ -32,6 +32,9 @@ const errorHandler = (err, req, res, next) => {
                 message: err.message,
                 stackTrace: err.stack
             });
+        default:
+            console.log("No Error Found");
+            break;
     }
     
 
